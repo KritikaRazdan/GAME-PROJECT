@@ -8,7 +8,7 @@ function setGame() {
         spider.id = i.toString();
         document.getElementById("board").appendChild(spider);
         var element = document.getElementById(i.toString());
-        // element.addEventListener('onmouseenter', clearspider);
+        // element.addEventListener('mouseenter', clearspider);
         var rect = element.getBoundingClientRect();
         var elementX = rect.left;
         var elementY = rect.top;
