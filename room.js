@@ -8,7 +8,7 @@ function setGame() {
         spider.id = i.toString();
         document.getElementById("board").appendChild(spider);
         var element = document.getElementById(i.toString());
-        // element.addEventListener('mouseenter', clearspider);
+        element.addEventListener('mouseenter', clearspider);
         var rect = element.getBoundingClientRect();
         var elementX = rect.left;
         var elementY = rect.top;
@@ -21,12 +21,11 @@ function setGame() {
         })
         var isGazeEnteringElement = x >= elementX && x <= (elementX + elementWidth) &&
             y >= elementY && y <= (elementY + elementHeight);
-        if (isGazeEnteringElement) {
-            var customevent = new CustomEvent('gazeenter', {bubbles: true,
-            cancelable: true});
-            document.dispatchEvent(gazeenterEvent);
-        }
-        element.addEventListener('gazeenter', clearspider);
+         var isGazeEnteringElement = x >= elementX && x <= (elementX + elementWidth) &&
+                y >= elementY && y <= (elementY + elementHeight);
+            if (isGazeEnteringElement) {
+                document.dispatchEvent(mouseenter);
+            }
     }
 }
 
