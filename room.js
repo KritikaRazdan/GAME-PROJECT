@@ -22,7 +22,7 @@ function setGame() {
         var isGazeEnteringElement = x >= elementX && x <= (elementX + elementWidth) &&
             y >= elementY && y <= (elementY + elementHeight);
         if (isGazeEnteringElement) {
-            customevent = new CustomEvent('gazeenter', {bubbles: true,
+            var customevent = new CustomEvent('gazeenter', {bubbles: true,
             cancelable: true});
             document.dispatchEvent(gazeenterEvent);
         }
