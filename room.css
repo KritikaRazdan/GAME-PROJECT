@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background: url("./room.jpg");
+    background: url("bg3.jpg");
     background-size: cover;
 }
 
@@ -21,6 +21,6 @@ body {
     width: 97px;
     height: 120px;
     margin: 20px 80px;
-    background-image: url("./spider.golden.png");
+    background-image: url("sp1.jpg");
     background-size: cover;
 }
