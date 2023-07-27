@@ -15,16 +15,26 @@
     @import 'https://fonts.googleapis.com/css?family=Nixie+One';
     @import 'https://fonts.googleapis.com/css?family=Calligraffitti';
 
+    .heading{
+      background-color: rgba(113, 93, 68, 0.674);
+      padding: 1em;
+      border-radius: 50px;
+      margin-left: 20em;
+      margin-right: 20em;
+    }
+    
     h1 {
       color: #FFFFFF;
       font-family: Aref Ruqaa;
     }
 
+    .content{
+      margin: 10rem;
+    }
     p {
       color: #FFFFFF;
       font-size: 20px;
       font-family: Calligraffitti;
-
     }
 
     h2 {
@@ -32,34 +42,18 @@
       font-family: Aref Ruqaa;
     }
 
-    h3 {
-      color: #FFFFFF;
-      font-family: Aref Ruqaa;
-    }
-
-    ul {
-      color: #FFFFFF;
-      font-family: Nixie One
-    }
-
-    h4 {
-      color: #FFFFFF;
-      font-family: Aref Ruqaa;
-    }
-
-
     button {
-      margin-top: 10px;
-      padding: 20px;
-      font-size: 50px;
-      border: 2px dashed #000;
+      margin-top: 40px;
+      padding: 10px 20px;
+      font-size: 40px;
+      border-radius: 25px;
+      background: beige;
+      cursor: pointer;
     }
 
     button:hover {
-      font-size: 50px;
-      padding: 20px;
-      border: 2px solid #000;
-      background: #fff;
+      padding: 10px 40px;
+      background: rgba(245, 245, 220, 0.879);
     }
   </style>
   <meta charset="UTF-8">
@@ -72,29 +66,24 @@
 </head>
 
 <body>
-  <center>
-    <h1>🔫GAME🔫<br></h1>
-  </center>
-  <center>
-    <a href="room.html">
-    <button id="playbutton">Play</button>
-    </a>
-  </center>
+  <div class="heading">
+    <center>
+      <h1>SPOT THE SPIDER<br></h1>
+    </center>
+  </div>
+  <div class="play">
+    <center>
+      <a href="room.html" class="play-button">
+      <button id="playbutton">Play</button>
+      </a>
+    </center>
+  </div>
 
 
-  <h2>Instructions:</h2>
-  <p>You have to shoot all of the point-earners.If you shoot 5 point-takers, it's game over.</p>
-  <h3>Point-earners:</h3>
-  <ul>
-    <li>Gold spiders-2 points</li>
-    <li>Silver spiders-3 points</li>
-
-  </ul>
-  <h4>Point-takers:</h4>
-  <ul>
-    <li>Lizards- minus 2 points</li>
-
-  </ul>
+  <div class="content">
+    <h2>Instructions:</h2>
+    <p>You have to shoot all of the point-earners.If you shoot 5 point-takers, it's game over.</p>
+  </div>
   <div class="loading" id="js-loader">
     <div class="loader"></div>
   </div>
