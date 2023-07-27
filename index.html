@@ -1,19 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="room.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@450" />
-    <script src = "room.js"></script>
-    <title>Room</title>
+
+  <style>
+    body {
+      background-image: url('bg.GIF');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+
+    @import 'https://fonts.googleapis.com/css?family=Aref+Ruqaa';
+    @import 'https://fonts.googleapis.com/css?family=Nixie+One';
+    @import 'https://fonts.googleapis.com/css?family=Calligraffitti';
+
+    h1 {
+      color: #FFFFFF;
+      font-family: Aref Ruqaa;
+    }
+
+    p {
+      color: #FFFFFF;
+      font-size: 20px;
+      font-family: Calligraffitti;
+
+    }
+
+    h2 {
+      color: #FFFFFF;
+      font-family: Aref Ruqaa;
+    }
+
+    h3 {
+      color: #FFFFFF;
+      font-family: Aref Ruqaa;
+    }
+
+    ul {
+      color: #FFFFFF;
+      font-family: Nixie One
+    }
+
+    h4 {
+      color: #FFFFFF;
+      font-family: Aref Ruqaa;
+    }
+
+
+    button {
+      margin-top: 10px;
+      padding: 20px;
+      font-size: 50px;
+      border: 2px dashed #000;
+    }
+
+    button:hover {
+      font-size: 50px;
+      padding: 20px;
+      border: 2px solid #000;
+      background: #fff;
+    }
+  </style>
+  <meta charset="UTF-8">
+
+
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
+
 <body>
-    <h1 style="font-family: 'Lexend Peta', sans-serif;">Dart The Spiders!</h1>
-    <h2 id = "score">Score: 0</h2>
-    <div id="board"></div>
+  <center>
+    <h1>🔫GAME🔫<br></h1>
+  </center>
+  <center>
+    <a href="room.html">
+    <button id="playbutton">Play</button>
+    </a>
+  </center>
+
+
+  <h2>Instructions:</h2>
+  <p>You have to shoot all of the point-earners.If you shoot 5 point-takers, it's game over.</p>
+  <h3>Point-earners:</h3>
+  <ul>
+    <li>Gold spiders-2 points</li>
+    <li>Silver spiders-3 points</li>
+
+  </ul>
+  <h4>Point-takers:</h4>
+  <ul>
+    <li>Lizards- minus 2 points</li>
+
+  </ul>
+  <div class="loading" id="js-loader">
+    <div class="loader"></div>
+  </div>
+
+  <div class="wrapper">
+
+    <canvas id="c"></canvas>
+
+  </div>
+  <div id="game"></div>
+
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
 <script src="webgazer.js" type="text/javascript" ></script>
 <script src="eyetracking.js" type="text/javascript" ></script>
-
 </html>
