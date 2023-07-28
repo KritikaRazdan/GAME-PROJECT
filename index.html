@@ -16,9 +16,9 @@
     @import 'https://fonts.googleapis.com/css?family=Calligraffitti';
 
     .heading{
-      background-color: rgba(113, 93, 68, 0.674);
+      background-color: rgb(113, 93, 68);
       padding: 1em;
-      border-radius: 50px;
+      border-radius: 15px;
       margin-left: 20em;
       margin-right: 20em;
     }
@@ -30,15 +30,22 @@
 
     .content{
       margin: 10rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(246, 246, 236, 0.594);
+      border-radius: 15px;
+      color: rgb(52, 27, 7);
+      box-shadow: 5px 10px #000000a9;
     }
     p {
-      color: #FFFFFF;
-      font-size: 20px;
+      /* color: #FFFFFF; */
+      font-size: 1.5em;
       font-family: Calligraffitti;
     }
 
     h2 {
-      color: #FFFFFF;
+      /* color: #FFFFFF; */
       font-family: Aref Ruqaa;
     }
 
@@ -49,6 +56,7 @@
       border-radius: 25px;
       background: beige;
       cursor: pointer;
+      transition: 0.5s;
     }
 
     button:hover {
@@ -68,7 +76,7 @@
 <body>
   <div class="heading">
     <center>
-      <h1>SPOT THE SPIDER<br></h1>
+      <h1>SPOT THE SPIDERS<br></h1>
     </center>
   </div>
   <div class="play">
@@ -81,8 +89,9 @@
 
 
   <div class="content">
-    <h2>Instructions:</h2>
-    <p>You have to shoot all of the point-earners.If you shoot 5 point-takers, it's game over.</p>
+    <h2>INSTRUCTIONS:</h2>
+    <p>Spot all the spiders using your detective gaze!</p>
+    <p>Once you find them all, you win!!</p>
   </div>
   <div class="loading" id="js-loader">
     <div class="loader"></div>
