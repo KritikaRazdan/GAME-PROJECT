@@ -24,3 +24,19 @@ body {
     background-image: url("sp1.jpg");
     background-size: cover;
 }
+
+#webgazerVideoContainer {
+    display: block !important; 
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 0px !important;
+    height: 0px !important;
+    z-index: 1;
+    opacity: 0;
+} 
+
+#webgazerGazeDot {
+    width: 20px !important;
+    height: 20px !important;
+}
